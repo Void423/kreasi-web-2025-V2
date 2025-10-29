@@ -47,7 +47,7 @@ const Homepage = () => {
         {/* Gambar */}
         <Image
           src={Billboard}
-          loading="eager"
+          loading="lazy"
           alt="Billboard"
           className="w-full lg:w-1/2 h-[300px] sm:h-[400px] lg:h-screen object-cover rounded-xl lg:rounded-none"
         />
