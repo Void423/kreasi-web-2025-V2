@@ -60,33 +60,8 @@ const ServicesPage = () => {
           src={item.image}
           title={item.title}
           desc={item.Desc}
+          serviceId={index + 1}
         />
-        // <div
-        // key={index}
-        // className={`flex flex-col md:flex-row items-center gap-6 md:gap-12 w-full max-w-6xl ${
-        //   item.position === "right" ? "md:flex-row-reverse" : ""
-        //   }`}
-        //   >
-        //   {/* Text */}
-        // <div className="flex flex-col max-w-xl text-left">
-        //   <h2 className="text-2xl sm:text-3xl text-center md:text-left lg:text-[43px] font-bold text-white mb-3">
-        //     {item.title}
-        //   </h2>
-        //   <p className="text-base sm:text-lg text-[#B0B0B0] leading-relaxed">
-        //     {item.Desc}
-        //   </p>
-        // </div>
-        //   {/* Image */}
-        //   <div className="w-full md:w-[40rem]">
-        //     <Image
-        //       src={item.image}
-        //       alt={item.title}
-        //       width={640}
-        //       height={360}
-        //       className="w-full h-auto max-h-[22rem] object-cover rounded-xl drop-shadow-2xl"
-        //     />
-        //   </div>
-        // </div>
       ))}
 
       {/* CTA */}

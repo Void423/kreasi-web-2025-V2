@@ -19,7 +19,71 @@ import ourWorks1 from "@/assets/images/Our Works/Our-Works (1).jpg";
 import ourWorks2 from "@/assets/images/Our Works/Our-Works (2).jpg";
 import ourWorks3 from "@/assets/images/Our Works/Our-Works (3).jpg";
 import ourWorks4 from "@/assets/images/Our Works/Our-Works (4).jpg";
-// Our Works
+import { StaticImageData } from "next/image";
+
+// services
+import gambar01 from "@/assets/images/NeonBox.jpg";
+import gambar02 from "@/assets/images/billdoard (1).jpg";
+import gambar03 from "@/assets/images/billdoard (2).jpg";
+
+export interface ServicesItem {
+  id: number;
+  data: {
+    id: number;
+    src: string | StaticImageData;
+    title: string;
+    desc: string;
+  }[];
+}
+export const ServicesItems: ServicesItem[] = [
+  {
+    id: 1,
+    data: [
+      {
+        id: 1,
+        src: gambar01,
+        title: "Lorem ipsum dolor sit amet",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique gravida risus, non commodo magna varius vitae. Pellentesque eget feugiat augue, eget ultrices tortor.",
+      },
+      {
+        id: 2,
+        src: gambar02,
+        title: "Lorem ipsum dolor sit amet",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique gravida risus, non commodo magna varius vitae. Pellentesque eget feugiat augue, eget ultrices tortor.",
+      },
+      {
+        id: 3,
+        src: gambar03,
+        title: "Lorem ipsum dolor sit amet",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique gravida risus, non commodo magna varius vitae. Pellentesque eget feugiat augue, eget ultrices tortor.",
+      },
+    ],
+  },
+  {
+    id: 2,
+    data: [
+      {
+        id: 1,
+        src: ourWorks1,
+        title: "Lorem ipsum dolor sit amet",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique gravida risus, non commodo magna varius vitae. Pellentesque eget feugiat augue, eget ultrices tortor.",
+      },
+      {
+        id: 2,
+        src: ourWorks2,
+        title: "Lorem ipsum dolor sit amet",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique gravida risus, non commodo magna varius vitae. Pellentesque eget feugiat augue, eget ultrices tortor.",
+      },
+      {
+        id: 3,
+        src: ourWorks3,
+        title: "Lorem ipsum dolor sit amet",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique gravida risus, non commodo magna varius vitae. Pellentesque eget feugiat augue, eget ultrices tortor.",
+      },
+    ],
+  },
+];
+
 export const navItem = [
   {
     menu: "Home",
