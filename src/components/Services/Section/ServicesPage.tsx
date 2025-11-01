@@ -1,7 +1,6 @@
 "use client";
 import CtaButton from "@/components/CtaButton";
 import { cardServices } from "@/lib/data";
-import Image from "next/image";
 import React from "react";
 import { MdEmail } from "react-icons/md";
 import gsap from "gsap";
@@ -46,7 +45,7 @@ const ServicesPage = () => {
   return (
     <div
       ref={sectionServices}
-      className="flex flex-col gap-12 items-center min-h-screen px-4 sm:px-8 lg:px-16 py-16"
+      className="flex flex-col items-center gap-8 min-h-screen px-4 sm:px-8 lg:px-8 py-16 overflow-hidden"
     >
       {/* Heading */}
       <h1 className="text-3xl sm:text-4xl lg:text-[57px] font-bold text-white text-center">
@@ -55,7 +54,10 @@ const ServicesPage = () => {
       {/* Services Cards */}
       {cardServices.map((item, index) => (
         <MoreServices
-          item={item}
+          item={{
+            ...item,
+            position: index % 2 === 0 ? "right" : "left",
+          }}
           key={index}
           src={item.image}
           title={item.title}

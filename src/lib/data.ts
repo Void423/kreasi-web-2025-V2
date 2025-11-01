@@ -12,7 +12,7 @@ import Client11 from "@/assets/images/logo-djarum.png";
 import Client12 from "@/assets/images/kredivo-seeklogo.png";
 import Client13 from "@/assets/images/logo-class-mild.png";
 import Billboard from "@/assets/images/Billboard_Homepage.jpg";
-import Neonbox from "@/assets/images/NeonBox.jpg";
+import Neonbox from "@/assets/images/app-billboard.jpg";
 import Banner from "@/assets/images/Banner.jpg";
 // Our Works
 import ourWorks1 from "@/assets/images/Our Works/Our-Works (1).jpg";
