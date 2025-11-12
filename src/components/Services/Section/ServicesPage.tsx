@@ -1,8 +1,8 @@
 "use client";
-import CtaButton from "@/components/CtaButton";
+
 import { cardServices } from "@/lib/data";
 import React from "react";
-import { MdEmail } from "react-icons/md";
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -34,7 +34,7 @@ const ServicesPage = () => {
               start: "top 100%",
               toggleActions: "play none none reset",
             },
-          }
+          },
         );
       });
     }, sectionServices);
@@ -45,7 +45,7 @@ const ServicesPage = () => {
   return (
     <div
       ref={sectionServices}
-      className="flex flex-col items-center gap-8 min-h-screen px-4 sm:px-8 lg:px-8 py-16 overflow-hidden"
+      className="flex flex-col items-center justify-between  gap-8 min-h-screen px-4 sm:px-8 lg:px-8 py-16 overflow-hidden"
     >
       {/* Heading */}
       <h1 className="text-3xl sm:text-4xl lg:text-[57px] font-bold text-white text-center">
@@ -65,12 +65,6 @@ const ServicesPage = () => {
           serviceId={index + 1}
         />
       ))}
-
-      {/* CTA */}
-      <CtaButton>
-        <MdEmail className="text-xl sm:text-2xl lg:text-3xl" />
-        <span className="ml-2 text-sm sm:text-base lg:text-lg">Contact Us</span>
-      </CtaButton>
     </div>
   );
 };

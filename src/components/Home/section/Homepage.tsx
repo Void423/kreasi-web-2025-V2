@@ -32,7 +32,7 @@ const Homepage = () => {
             start: "top 80%", // baru jalan pas muncul di layar
             toggleActions: "play none none reset", // play sekali doang
           },
-        }
+        },
       );
     }, sectionHome);
 
@@ -42,7 +42,7 @@ const Homepage = () => {
   return (
     <div className="min-h-screen bg-black">
       <div
-        className={`flex flex-col lg:flex-row md:justify-start justify-center items-center min-h-screen bg-[#0F2166] text-white gap-3 md:gap-5 lg:gap-8 px-6 md:px-0 ${Satoshi.className}`}
+        className={`flex flex-col lg:flex-row md:justify-start justify-center items-center min-h-screen bg-[#0F2166] text-white gap-3 md:gap-5 lg:gap-8 px-8 md:px-0 ${Satoshi.className}`}
       >
         {/* Gambar */}
         <Image
@@ -55,7 +55,7 @@ const Homepage = () => {
         {/* Teks */}
         <div
           ref={sectionHome}
-          className="flex flex-col max-w-3xl gap-3 text-left my-3 lg:mt-0 will-change-transform will-change-opacity overflow-hidden"
+          className="flex flex-col max-w-3xl gap-3 text-left my-3 lg:mt-0 px-3 will-change-transform will-change-opacity overflow-hidden"
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[76px] font-bold">
             Beriklan Bersama Kreasi Advertising
@@ -68,7 +68,7 @@ const Homepage = () => {
           <div className="flex justify-center lg:justify-start">
             <HireUs link="https://linktr.ee/KreasiADV">
               <BsBriefcaseFill />
-              Hire Us
+              Contact Us
             </HireUs>
           </div>
         </div>

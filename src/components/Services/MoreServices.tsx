@@ -11,7 +11,6 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import Image, { StaticImageData } from "next/image";
-import gambar from "@/assets/images/app-billboard.jpg";
 import { ServicesItems } from "@/lib/data";
 import { Button } from "@/components/ui/button";
 
@@ -45,35 +44,37 @@ export default function MoreServices({
   const activeItem = serviceData.data[activeItemIndex];
 
   return (
-    <div className="w-full md:max-w-[140vh] overflow-hidden ">
+    <div className=" flex flex-col  w-full md:max-w-[180vh]  ">
       <Dialog>
         {/* === Trigger (Card Preview) === */}
         <div
           className={`flex flex-col ${
             item.position === "left" ? "md:flex-row-reverse" : "md:flex-row"
-          } items-center justify-between gap-4 md:gap-8 overflow-hidden`}
+          } items-center justify-between gap-4 md:gap-8 `}
         >
           {/* Image Section */}
           <DialogTrigger asChild>
-            <div className="relative group w-full md:w-1/2 h-[250px] md:h-[300px] overflow-hidden rounded-lg shadow-lg">
-              {/* Gambar */}
-              <Image
-                src={src}
-                width={800}
-                height={500}
-                alt="gambar"
-                className="object-cover object-center w-full h-full transform transition-transform duration-500 ease-in-out group-hover:scale-125"
-              />
+            <div className="w-full  p-2">
+              <div className="relative group h-[250px] md:h-[300px] rounded-lg hover:scale-[115%] shadow-lg transition-all duration-500 ease-in-out will-change-transform">
+                {/* Gambar */}
+                <Image
+                  src={src}
+                  width={800}
+                  height={500}
+                  alt="gambar"
+                  className="object-cover object-center   w-full h-full rounded-lg  transform transition-transform duration-300 ease-in-out"
+                />
 
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
-                <Button
-                  variant="default"
-                  className="bg-primary hover:bg-primary/90 text-sm md:text-base z-10 cursor-pointer hover:-translate-y-2 hover:scale-105 transition duration-300 ease-in-out"
-                >
-                  View Project
-                  <MoveUpRight className="ml-2 text-xl" />
-                </Button>
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black/40 opacity-0 rounded-lg  group-hover:opacity-100 transition-opacity duration-800 flex items-end justify-end p-4">
+                  <Button
+                    variant="default"
+                    className={`bg-primary hover:bg-primary/90 text-sm md:text-base z-10 cursor-pointer hover:-translate-y-2 hover:scale-105 transition-all duration-300 ease-in-out`}
+                  >
+                    View Project
+                    <MoveUpRight className="ml-2 text-xl" />
+                  </Button>
+                </div>
               </div>
             </div>
           </DialogTrigger>
