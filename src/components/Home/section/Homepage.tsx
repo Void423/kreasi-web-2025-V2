@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Billboard from "@/assets/images/Billboard_Homepage.jpg";
+import Billboard from "@/assets/images/Billboard Kreasi.jpeg";
 import { Satoshi } from "@/lib/font";
 import HireUs from "@/components/CtaButton";
 import { BsBriefcaseFill } from "react-icons/bs";

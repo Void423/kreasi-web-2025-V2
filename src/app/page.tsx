@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import CTA from "@/components/Home/section/Cta/Cta";
 import Homepage from "@/components/Home/section/Homepage";
 import WhatWeWorking from "@/components/Home/section/WhatWeWorkingOn/WhatWeWorkingOn";

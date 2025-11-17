@@ -6,9 +6,9 @@ import CtaServices from "@/components/Services/Section/CtaServices";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Layanan Periklanan | Kreasi Advertising Bukittinggi",
+  title: "Layanan",
   description:
-    "Kreasi Advertising menyediakan layanan iklan billboard, spanduk, baliho, dan media promosi kreatif di Bukittinggi. Solusi periklanan efektif untuk meningkatkan brand awareness bisnis Anda.",
+    "Kreasi Advertising menyediakan layanan iklan billboard, spanduk, baliho, billboard, dan media promosi kreatif di Bukittinggi. Solusi periklanan efektif untuk meningkatkan brand awareness bisnis Anda.",
   keywords: [
     "jasa iklan Bukittinggi",
     "layanan periklanan",
@@ -25,19 +25,6 @@ export const metadata: Metadata = {
       "Tingkatkan visibilitas bisnis Anda dengan layanan iklan outdoor, billboard, spanduk, dan media promosi dari Kreasi Advertising.",
     url: "https://namadomain.com/services",
     siteName: "Kreasi Advertising",
-    images: [
-      {
-        url: "https://namadomain.com/og-services.jpg", // ganti sama gambar yang relevan
-        width: 1200,
-        height: 630,
-        alt: "Layanan Periklanan Kreasi Advertising",
-      },
-    ],
-    locale: "id_ID",
-    type: "website",
-  },
-  alternates: {
-    canonical: "https://namadomain.com/services",
   },
 };
 

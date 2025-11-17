@@ -4,27 +4,36 @@ import Navbar from "@/components/Navbar";
 import { Satoshi } from "@/lib/font";
 import Footer from "@/components/Footer";
 export const metadata: Metadata = {
-  title: "Kreasi Advertising | Jasa Iklan & Promosi Terbaik",
+  title: {
+    default: "Kreasi Advertising | Jasa Iklan & Promosi Terbaik",
+    template: "%s | Kreasi Advertising Bukittinggi",
+  },
   description:
     "Butuh tempat periklanan di Bukittinggi? Kami menyediakan layanan iklan outdoor, billboard, spanduk, dan media promosi lainnya untuk bisnis Anda. Jangkau lebih banyak pelanggan dengan iklan yang efektif.",
   keywords: [
     "tempat periklanan di Bukittinggi",
     "jasa iklan Bukittinggi",
     "billboard Bukittinggi",
+    "baliho Bukittinggi",
     "spanduk Bukittinggi",
     "jasa promosi Bukittinggi",
     "advertising Bukittinggi",
     "periklanan Sumatera Barat",
   ],
+  twitter: {
+    card: "summary_large_image",
+    site: "@kreasiadvertising",
+    creator: "@kreasiadvertising",
+  },
   openGraph: {
-    title: "Tempat Periklanan di Bukittinggi",
+    title: "kreasi advertising",
     description:
       "Solusi periklanan terbaik di Bukittinggi: billboard, spanduk, dan media promosi untuk meningkatkan brand awareness bisnis Anda.",
-    url: "https://namadomain.com",
-    siteName: "Nama Perusahaan Iklan Bukittinggi",
+    url: "http://localhost:3000",
+    siteName: "kreasi advrtising bukittinggi",
     images: [
       {
-        url: "https://namadomain.com/og-image.jpg",
+        url: "http://localhost:3000/og-image.png",
         width: 1200,
         height: 630,
         alt: "Tempat Periklanan di Bukittinggi",
@@ -34,7 +43,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://namadomain.com",
+    canonical: "http://localhost:3000",
   },
 };
 export default function RootLayout({
