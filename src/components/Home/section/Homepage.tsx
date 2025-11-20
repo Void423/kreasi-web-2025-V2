@@ -35,7 +35,6 @@ const Homepage = () => {
         },
       );
     }, sectionHome);
-
     return () => ctx.revert(); // cleanup GSAP
   }, []);
 

@@ -20,11 +20,11 @@ export const metadata: Metadata = {
     title: "Tentang Kreasi Advertising",
     description:
       "Kreasi Advertising adalah mitra periklanan terpercaya di Bukittinggi. Fokus kami adalah membantu bisnis meningkatkan brand awareness dengan media iklan outdoor dan digital.",
-    url: "https://namadomain.com/about",
+    url: "/about-us",
     siteName: "Kreasi Advertising",
     images: [
       {
-        url: "https://namadomain.com/og-about.jpg", // ganti dengan gambar OG khusus about
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Tentang Kreasi Advertising Bukittinggi",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://namadomain.com/about",
+    canonical: "/about-us",
   },
 };
 const page = () => {

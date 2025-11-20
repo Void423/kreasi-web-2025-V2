@@ -4,6 +4,15 @@ import Homepage from "@/components/Home/section/Homepage";
 import WhatWeWorking from "@/components/Home/section/WhatWeWorkingOn/WhatWeWorkingOn";
 import Whychooseus from "@/components/Home/section/WhyChooseUs/Whychooseus";
 
+export const metadata: Metadata = {
+  title: "Kreasi Advertising | Jasa Iklan & Promosi Terbaik di Bukittinggi",
+  description:
+    "Tingkatkan visibilitas bisnis Anda dengan layanan iklan outdoor, billboard, spanduk, dan media promosi kreatif dari Kreasi Advertising Bukittinggi.",
+  alternates: {
+    canonical: "/",
+  },
+};
+
 const page = () => {
   return (
     <>

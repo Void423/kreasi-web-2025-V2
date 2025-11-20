@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import { Satoshi } from "@/lib/font";
 import Footer from "@/components/Footer";
 export const metadata: Metadata = {
+  metadataBase: new URL("https://kreasi-web-2025-v2.vercel.app"),
   title: {
     default: "Kreasi Advertising | Jasa Iklan & Promosi Terbaik",
     template: "%s | Kreasi Advertising Bukittinggi",
@@ -20,20 +21,23 @@ export const metadata: Metadata = {
     "advertising Bukittinggi",
     "periklanan Sumatera Barat",
   ],
-  twitter: {
-    card: "summary_large_image",
-    site: "@kreasiadvertising",
-    creator: "@kreasiadvertising",
+  authors: [{ name: "Kreasi Advertising" }],
+  creator: "Kreasi Advertising",
+  publisher: "Kreasi Advertising",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
   },
   openGraph: {
-    title: "kreasi advertising",
+    title: "Kreasi Advertising | Solusi Periklanan Terbaik",
     description:
       "Solusi periklanan terbaik di Bukittinggi: billboard, spanduk, dan media promosi untuk meningkatkan brand awareness bisnis Anda.",
-    url: "http://localhost:3000",
-    siteName: "kreasi advrtising bukittinggi",
+    url: "https://kreasi-web-2025-v2.vercel.app",
+    siteName: "Kreasi Advertising Bukittinggi",
     images: [
       {
-        url: "http://localhost:3000/og-image.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Tempat Periklanan di Bukittinggi",
@@ -42,8 +46,27 @@ export const metadata: Metadata = {
     locale: "id_ID",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kreasi Advertising | Jasa Iklan & Promosi Terbaik",
+    description:
+      "Solusi periklanan terbaik di Bukittinggi: billboard, spanduk, dan media promosi untuk meningkatkan brand awareness bisnis Anda.",
+    creator: "@kreasiadvertising",
+    images: ["/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   alternates: {
-    canonical: "http://localhost:3000",
+    canonical: "/",
   },
 };
 export default function RootLayout({
