@@ -5,7 +5,7 @@ import { BsBriefcaseFill } from "react-icons/bs";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import gambar from "@/assets/images/billdoard (2).jpg";
+import gambar from "@/assets/images/38.jpg";
 import HireUs from "@/components/CtaButton";
 import { useRef } from "react";
 

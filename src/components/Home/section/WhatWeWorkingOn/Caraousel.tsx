@@ -1,9 +1,11 @@
 "use client";
 
 import Carousel from "@/components/ui/carousel";
-import gambar1 from "@/assets/images/Billboard_Homepage.jpg";
-import gambar2 from "@/assets/images/billdoard (1).jpg";
-import gambar3 from "@/assets/images/billdoard (2).jpg";
+import gambar1 from "@/assets/images/oppo-spanduk.jpg";
+import gambar2 from "@/assets/images/baliho-yamaha.jpg";
+import gambar3 from "@/assets/images/baliho-missGlam.jpg";
+import gambar4 from "@/assets/images/baliho-konvermex.jpg";
+import gambar5 from "@/assets/images/baliho-oxygen.jpg";
 export const CarouselDemo = () => {
   const slideData = [
     {
@@ -13,16 +15,28 @@ export const CarouselDemo = () => {
       src: gambar1,
     },
     {
-      title: "Billboard Indofood.",
+      title: "Billboard Yamaha",
       button: "Jelajahi Lokasi",
-      desc: "Jl. Sumbar-Riau No.Km. 19, Air Putih Lubuk Bangku, Kec. Harau, Kabupaten Lima Puluh Kota, Sumatera Barat 26271",
+      desc: "Jl. Raya Padang Panjang - Bukittinggi 92, Taluak Ampek Suku, Kec. Banuhampu, Kabupaten Agam, Sumatera Barat 26181",
       src: gambar2,
     },
     {
-      title: "Baliho Oppo ",
+      title: "Billboard Miss Glam",
       button: "Jelajahi Lokasi",
-      desc: "Jl. Ahmad Yani No.1, Benteng Ps. Atas, Kec. Guguk Panjang, Kota Bukittinggi, Sumatera Barat 26136",
+      desc: "Jl. Raya Padang Panjang - Bukittinggi, Ladang Laweh, Kec. Banuhampu, Kabupaten Agam, Sumatera Barat 26181",
       src: gambar3,
+    },
+    {
+      title: "Billboard Konvermex",
+      button: "Jelajahi Lokasi",
+      desc: "Jl. Raya Padang Panjang - Bukittinggi, Ladang Laweh, Kec. Banuhampu, Kabupaten Agam, Sumatera Barat 26181",
+      src: gambar4,
+    },
+    {
+      title: "Billboard Oxygen",
+      button: "Jelajahi Lokasi",
+      desc: "Jl. Raya Padang Panjang - Bukittinggi 90-92, Ladang Laweh, Kec. Banuhampu, Kabupaten Agam, Sumatera Barat 26181",
+      src: gambar5,
     },
   ];
   return (
