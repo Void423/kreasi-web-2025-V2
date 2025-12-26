@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import backgroundImage from "@/assets/images/oppo-baliho.jpg";
+import backgroundImage from "@/assets/images/management-coaching-business-dealing-mentor-concept.jpg";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";

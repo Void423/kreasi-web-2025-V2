@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import gambar from "@/assets/images/About/bao-bao.jpg";
+import gambar from "@/assets/images/smiley-entrepreneur-talking-phone.jpg";
 import HireUs from "@/components/CtaButton";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

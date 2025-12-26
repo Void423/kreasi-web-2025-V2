@@ -54,7 +54,7 @@ export default function MoreServices({
         >
           {/* Image Section */}
           <DialogTrigger asChild>
-            <div className="w-2xl  p-2">
+            <div className="w-full md:w-1/2  p-2">
               <div className="relative group h-[250px] md:h-[300px] rounded-lg hover:scale-[115%] shadow-lg transition-all duration-500 ease-in-out will-change-transform">
                 {/* Gambar */}
                 <Image

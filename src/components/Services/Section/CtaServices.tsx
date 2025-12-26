@@ -69,7 +69,7 @@ const CtaServices = () => {
           src={billboard}
           alt="billboard"
           fill
-          className="object-cover"
+          className="object-cover object-center"
           sizes="(max-width: 1024px) 100vw, 50vw"
           priority
         />
