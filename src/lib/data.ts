@@ -11,20 +11,28 @@ import Client10 from "@/assets/images/logo-rokok-camel copy.png";
 import Client11 from "@/assets/images/logo-djarum.png";
 import Client12 from "@/assets/images/kredivo-seeklogo.png";
 import Client13 from "@/assets/images/logo-class-mild.png";
-import Billboard from "@/assets/images/Billboard_Homepage.jpg";
-import Neonbox from "@/assets/images/app-billboard.jpg";
-import Banner from "@/assets/images/Banner.jpg";
+// card services
+import Billboard from "@/assets/images/baliho-missGlam.jpg";
+import Neonbox from "@/assets/images/Our Works/neonbox-posIndonesia.jpg";
+import Banner from "@/assets/images/Our Works/im3-printing.jpg";
 // Our Works
-import ourWorks1 from "@/assets/images/Our Works/Our-Works (1).jpg";
-import ourWorks2 from "@/assets/images/Our Works/Our-Works (2).jpg";
-import ourWorks3 from "@/assets/images/Our Works/Our-Works (3).jpg";
-import ourWorks4 from "@/assets/images/Our Works/Our-Works (4).jpg";
+import ourWorks1 from "@/assets/images/Our Works/1c.jpg";
+import ourWorks2 from "@/assets/images/Our Works/baliho-pegadaian.jpg";
+import ourWorks4 from "@/assets/images/Our Works/61.jpg";
+import ourWorks5 from "@/assets/images/Our Works/52.jpg";
+import ourWorks6 from "@/assets/images/Our Works/21.jpg";
+import ourWorks3 from "@/assets/images/Our Works/ourWorks-honda.jpg";
 import { StaticImageData } from "next/image";
 
 // services
-import gambar01 from "@/assets/images/NeonBox.jpg";
-import gambar02 from "@/assets/images/billdoard (1).jpg";
-import gambar03 from "@/assets/images/billdoard (2).jpg";
+/* Billboard */
+import gambar01 from "@/assets/images/baliho-missGlam.jpg";
+import gambar02 from "@/assets/images/baliho-konvermex.jpg";
+import gambar03 from "@/assets/images/baliho-oxygen.jpg";
+/* neonBox */
+import gambar1 from "@/assets/images/PNT/PNT (1).jpg";
+import gambar2 from "@/assets/images/PNT/pnt-jariPerabot.jpg";
+import gambar3 from "@/assets/images/PNT/PNT (3).jpg";
 
 export interface ServicesItem {
   id: number;
@@ -42,20 +50,20 @@ export const ServicesItems: ServicesItem[] = [
       {
         id: 1,
         src: gambar01,
-        title: "Lorem ipsum dolor sit amet",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique gravida risus, non commodo magna varius vitae. Pellentesque eget feugiat augue, eget ultrices tortor.",
+        title: "Billboard Miss Glam",
+        desc: "Jl. Raya Padang Panjang - Bukittinggi, Ladang Laweh, Kec. Banuhampu, Kabupaten Agam, Sumatera Barat 26181",
       },
       {
         id: 2,
         src: gambar02,
-        title: "Lorem ipsum dolor sit amet",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique gravida risus, non commodo magna varius vitae. Pellentesque eget feugiat augue, eget ultrices tortor.",
+        title: "Billboard Konvermex",
+        desc: "Jl. Raya Padang Panjang - Bukittinggi, Ladang Laweh, Kec. Banuhampu, Kabupaten Agam, Sumatera Barat 26181",
       },
       {
         id: 3,
         src: gambar03,
-        title: "Lorem ipsum dolor sit amet",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique gravida risus, non commodo magna varius vitae. Pellentesque eget feugiat augue, eget ultrices tortor.",
+        title: "Billboard Oxygen",
+        desc: "Jl. Raya Padang Panjang - Bukittinggi 90-92, Ladang Laweh, Kec. Banuhampu, Kabupaten Agam, Sumatera Barat 26181",
       },
     ],
   },
@@ -64,21 +72,21 @@ export const ServicesItems: ServicesItem[] = [
     data: [
       {
         id: 1,
-        src: ourWorks1,
-        title: "Lorem ipsum dolor sit amet",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique gravida risus, non commodo magna varius vitae. Pellentesque eget feugiat augue, eget ultrices tortor.",
+        src: gambar1,
+        title: "Papan Nama Toko Telkomsel",
+        desc: "Papan nama toko dengan posisi horizontal dan tipis",
       },
       {
         id: 2,
-        src: ourWorks2,
-        title: "Lorem ipsum dolor sit amet",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique gravida risus, non commodo magna varius vitae. Pellentesque eget feugiat augue, eget ultrices tortor.",
+        src: gambar2,
+        title: "Papan Nama Toko Jati Perabot",
+        desc: "Papan nama toko Jati Perabotan.",
       },
       {
         id: 3,
-        src: ourWorks3,
-        title: "Lorem ipsum dolor sit amet",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique gravida risus, non commodo magna varius vitae. Pellentesque eget feugiat augue, eget ultrices tortor.",
+        src: gambar3,
+        title: "Etalase Toko",
+        desc: "Etalase toko dilengkapi dengan kaca etalase. Pada bagian depan etalase juga ditambahkan branding OPPO.",
       },
     ],
   },
@@ -116,7 +124,26 @@ export const cardChooseUs = [
       "Tim kreatif kami memahami pentingnya keselarasan visual untuk menciptakan dampak jangka panjang.",
   },
 ];
-
+export const cardServices = [
+  {
+    title: "Billboard, Baliho & Street Sign Advertising",
+    Desc: "Kreasi Bukittinggi menyediakan layanan pembuatan dan pemasangan billboard, baliho, dan street sign di lokasi strategis. Solusi media promosi outdoor dengan visibilitas tinggi untuk meningkatkan brand awareness dan menjangkau audiens secara maksimal.",
+    position: "right",
+    image: Billboard,
+  },
+  {
+    title: "Neon Box, Papan Nama Toko (PNT) & Produksi Advertising",
+    Desc: "Sebagai penyedia jasa advertising terpercaya, Kreasi Bukittinggi melayani pembuatan neon box, papan nama toko (PNT), huruf timbul, dan berbagai media advertising custom dengan desain profesional dan material berkualitas tinggi.",
+    position: "left",
+    image: Neonbox,
+  },
+  {
+    title: "Digital Printing & Media Promosi",
+    Desc: "Kreasi Bukittinggi menghadirkan layanan digital printing berkualitas tinggi untuk spanduk, banner, backdrop, stiker, dan berbagai kebutuhan media promosi. Hasil cetak tajam, tahan lama, dan siap mendukung aktivitas marketing bisnis Anda.",
+    position: "right",
+    image: Banner,
+  },
+];
 export const logoClient = [
   {
     path: Client1,
@@ -203,56 +230,37 @@ export const FooterItem = [
   },
 ];
 
-export const cardServices = [
-  {
-    title: "Premium Billboard & Street Sign Installation",
-    Desc: "Kami menyediakan layanan pemasangan baliho (billboard) berkualitas tinggi di area strategis seperti Lake Angelita. Hadirkan pesan brand Anda dengan visibilitas maksimal di ruang publik.",
-    position: "right",
-    image: Billboard,
-  },
-  {
-    title: "Neon Box & Digital Printing Solutions",
-    Desc: "Tingkatkan daya tarik bisnis Anda dengan neon box terang dan desain mencolok, dilengkapi dengan layanan cetak digital (printing) berkualitas untuk berbagai kebutuhan promosi.",
-    position: "left",
-    image: Neonbox,
-  },
-  {
-    title: "Pemasangan Spanduk",
-    Desc: "Tingkatkan daya tarik bisnis Anda dengan neon box terang dan desain mencolok, dilengkapi dengan layanan cetak digital (printing) berkualitas untuk berbagai kebutuhan promosi.",
-    position: "right",
-    image: Banner,
-  },
-];
-
 export const OurWorks = [
   {
-    image: ourWorks4,
-    title: "Billboard Sampoerna ",
-    address: "Jl. Sudirman No. 120, Jakarta Pusat, DKI Jakarta",
-  },
-  {
-    image: Neonbox,
-    title: "Neon Box Bank BSI",
-    address: "Jl. Asia Afrika No. 22, Bandung, Jawa Barat",
-  },
-  {
-    image: Banner,
-    title: "Spanduk Puskesmas Kurai",
-    address: "Jl. Adisucipto No. 88, Pontianak, Kalimantan Barat",
-  },
-  {
-    image: ourWorks3,
-    title: "Billboard Indomie",
-    address: "Jl. Diponegoro No. 14, Surabaya, Jawa Timur",
-  },
-  {
     image: ourWorks1,
-    title: "Neon Box Alfamart",
-    address: "Jl. Gajah Mada No. 9, Medan, Sumatera Utara",
+    title: "Billboard Asuransi Sinarmas. ",
+    address: "Jl. Ahmad Karim No.2d, Benteng Ps. Atas Kota Bukittinggi",
   },
   {
     image: ourWorks2,
-    title: "Banner Kampus UGM",
-    address: "Jl. Kaliurang Km. 5, Sleman, Yogyakarta",
+    title: "Billboard Pengadaian",
+    address: "Jl. Raya Padang Panjang - Bukittinggi,  Kota Bukittinggi",
+  },
+  {
+    image: ourWorks3,
+    title: "Billboard Honda",
+    address: "Jl. Ahmad Yani 148, Benteng Ps. Atas Kota Bukittinggi",
+  },
+  {
+    image: ourWorks4,
+    title: "Billboard Telkomsel",
+    address:
+      "Jl. Raya Padang Panjang - Bukittinggi, Bukit Cangang Kayu Ramang Kota Bukittinggi",
+  },
+  {
+    image: ourWorks5,
+    title: "Neonbox Bank Syariah Bukopin",
+    address: "Jl. Perintis Kemerdekaan 30-8, Aur Tajungkang Kota Bukittinggi",
+  },
+  {
+    image: ourWorks6,
+    title: "Billboard Oxygen",
+    address:
+      "Jl. Raya Padang Panjang - Bukittinggi 90-92, Ladang Laweh, Kabupaten Agam",
   },
 ];

@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import backgroundImage from "@/assets/images/billdoard (2).jpg";
+import backgroundImage from "@/assets/images/oppo-baliho.jpg";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -43,7 +43,7 @@ const Hero = () => {
         alt="Background CTA"
         fill
         priority
-        className="object-cover object-center brightness-50 "
+        className="object-cover object-top brightness-50 "
       />
 
       {/* Overlay content */}

@@ -50,11 +50,11 @@ export default function MoreServices({
         <div
           className={`flex flex-col ${
             item.position === "left" ? "md:flex-row-reverse" : "md:flex-row"
-          } items-center justify-between gap-4 md:gap-8 `}
+          } items-center  gap-4 md:gap-8 `}
         >
           {/* Image Section */}
           <DialogTrigger asChild>
-            <div className="w-full  p-2">
+            <div className="w-2xl  p-2">
               <div className="relative group h-[250px] md:h-[300px] rounded-lg hover:scale-[115%] shadow-lg transition-all duration-500 ease-in-out will-change-transform">
                 {/* Gambar */}
                 <Image
@@ -113,8 +113,8 @@ export default function MoreServices({
                   <Image
                     src={activeItem.src}
                     alt={activeItem.title}
-                    width={800}
-                    height={400}
+                    // width={800}
+                    // height={400}
                     className="w-full h-full object-cover rounded-xl transition-transform duration-500 hover:scale-105"
                     priority
                   />
@@ -144,8 +144,8 @@ export default function MoreServices({
                     <Image
                       src={serviceData.data[0].src}
                       alt={serviceData.data[0].title}
-                      width={500}
-                      height={250}
+                      // width={500}
+                      // height={250}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div
@@ -171,8 +171,8 @@ export default function MoreServices({
                     <Image
                       src={serviceData.data[1].src}
                       alt={serviceData.data[1].title}
-                      width={250}
-                      height={120}
+                      // width={250}
+                      // height={120}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div
@@ -197,8 +197,8 @@ export default function MoreServices({
                     <Image
                       src={serviceData.data[2].src}
                       alt={serviceData.data[2].title}
-                      width={250}
-                      height={120}
+                      // width={250}
+                      // height={120}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div
