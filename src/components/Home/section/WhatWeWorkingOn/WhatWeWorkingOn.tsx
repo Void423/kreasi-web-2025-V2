@@ -46,10 +46,10 @@ const WhatWeWorking = () => {
         </h1>
         <CarouselDemo />
         <p className="text-[#B4B4B4] max-w-7xl text-center p-6 md:p-0">
-          Temukan pilihan laptop dan komputer terbaik yang paling banyak dicari
-          pelanggan kami. Performa cepat, desain elegan, dan harga bersahabat –
-          semua tersedia untuk menunjang aktivitas harian maupun kebutuhan
-          profesionalmu.
+          Kami adalah penyedia jasa advertising profesional yang melayani
+          pembuatan baliho, spanduk, neon box, billboard, dan media promosi
+          outdoor lainnya. Solusi promosi efektif dengan desain kreatif,
+          kualitas terbaik, dan harga bersahabat untuk bisnis Anda.
         </p>
       </div>
     </div>

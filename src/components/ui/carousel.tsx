@@ -100,7 +100,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
             alt={title}
             src={src}
             onLoad={imageLoaded}
-            loading="eager"
+            loading="lazy"
             decoding="sync"
           />
           {current === index && (
