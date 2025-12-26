@@ -7,21 +7,21 @@ import gambar3 from "@/assets/images/billdoard (2).jpg";
 export const CarouselDemo = () => {
   const slideData = [
     {
-      title: "Billboard Sampoerna",
+      title: "Street Sign provider Indosat.",
       button: "Jelajahi Lokasi",
-      desc: "Jl. Batang Masang No.252, Birugo, Kec. Aur Birugo Tigo Baleh, Kota Bukittinggi, Sumatera Barat",
+      desc: "Jl. Raya Padang Panjang - Bukittinggi, Belakang Balok, Kec. Aur Birugo Tigo Baleh, Kota Bukittinggi, Sumatera Barat 26181",
       src: gambar1,
     },
     {
-      title: "Spanduk Puskesmas",
+      title: "Billboard Indofood.",
       button: "Jelajahi Lokasi",
-      desc: "Jl. Sudirman No.45, Kuningan, Jakarta Selatan, DKI Jakarta",
+      desc: "Jl. Sumbar-Riau No.Km. 19, Air Putih Lubuk Bangku, Kec. Harau, Kabupaten Lima Puluh Kota, Sumatera Barat 26271",
       src: gambar2,
     },
     {
-      title: "NeonBox Xiaomi",
+      title: "Baliho Oppo ",
       button: "Jelajahi Lokasi",
-      desc: "Jl. Asia Afrika No.112, Braga, Kec. Sumur Bandung, Kota Bandung, Jawa Barat",
+      desc: "Jl. Ahmad Yani No.1, Benteng Ps. Atas, Kec. Guguk Panjang, Kota Bukittinggi, Sumatera Barat 26136",
       src: gambar3,
     },
   ];
