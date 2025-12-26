@@ -33,7 +33,10 @@ import gambar03 from "@/assets/images/baliho-oxygen.jpg";
 import gambar1 from "@/assets/images/PNT/PNT (1).jpg";
 import gambar2 from "@/assets/images/PNT/pnt-jariPerabot.jpg";
 import gambar3 from "@/assets/images/PNT/PNT (3).jpg";
-
+/* digital promosi */
+import MediaPromosi from "@/assets/images/38.jpg";
+import MediaPromosi1 from "@/assets/images/36a.jpg";
+import MediaPromosi2 from "@/assets/images/67.jpg";
 export interface ServicesItem {
   id: number;
   data: {
@@ -87,6 +90,29 @@ export const ServicesItems: ServicesItem[] = [
         src: gambar3,
         title: "Etalase Toko",
         desc: "Etalase toko dilengkapi dengan kaca etalase. Pada bagian depan etalase juga ditambahkan branding OPPO.",
+      },
+    ],
+  },
+  {
+    id: 3,
+    data: [
+      {
+        id: 1,
+        src: MediaPromosi,
+        title: "Ramzi Cell",
+        desc: "Produksi Spanduk Indosat untuk PNT Toko",
+      },
+      {
+        id: 2,
+        src: MediaPromosi1,
+        title: "R&J CELL",
+        desc: "Produksi Spanduk Indosat ",
+      },
+      {
+        id: 3,
+        src: MediaPromosi2,
+        title: "Warna Komunika ",
+        desc: "Produksi Spanduk Indosat untuk PNT Toko",
       },
     ],
   },
