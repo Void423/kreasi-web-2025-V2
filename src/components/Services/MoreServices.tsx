@@ -106,7 +106,7 @@ export default function MoreServices({
 
           <div className="flex flex-col md:flex-row h-full max-h-[85vh] overflow-hidden">
             {/* Left Section (Fixed/Sticky) - Main Preview & Text */}
-            <div className="w-full md:w-2/3 flex flex-col p-4 sm:p-6 md:p-8 overflow-y-auto">
+            <div className="hidden w-full md:w-2/3 md:flex flex-col p-4 sm:p-6 md:p-8 overflow-y-auto">
               <div className="flex flex-col gap-4 sm:gap-6">
                 {/* Active Image Section */}
                 <div className="w-full rounded-2xl overflow-hidden shadow-2xl bg-black/20">
@@ -135,20 +135,19 @@ export default function MoreServices({
 
             {/* Right Section (Scrollable) - Masonry Grid Gallery */}
             <div className="w-full md:w-1/3 border-t md:border-t-0 md:border-l border-white/10 bg-black/20 overflow-y-auto p-4 custom-scrollbar">
-              <div className="columns-2 gap-3 space-y-3">
+              <div className="grid grid-cols-2 gap-3">
                 {serviceData.data.map((item, index) => {
                   return (
                     <div
                       key={item.id}
-                      className="break-inside-avoid mb-3 rounded-xl overflow-hidden cursor-pointer relative group"
+                      className="rounded-xl overflow-hidden cursor-pointer relative group aspect-[4/3]"
                       onClick={() => setActiveItemIndex(index)}
                     >
                       <Image
                         src={item.src}
                         alt={item.title}
-                        width={300}
-                        height={200}
-                        className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                       <div
                         className={`absolute inset-0 bg-black/50 flex items-center justify-center transition-all duration-300 ${
