@@ -3,9 +3,9 @@
 import Carousel from "@/components/ui/carousel";
 import gambar1 from "@/assets/images/oppo-spanduk.jpg";
 import gambar2 from "@/assets/images/baliho-yamaha.jpg";
-import gambar3 from "@/assets/images/baliho-missGlam.jpg";
-import gambar4 from "@/assets/images/baliho-konvermex.jpg";
-import gambar5 from "@/assets/images/baliho-oxygen.jpg";
+import gambar3 from "@/assets/images/baliho/baliho-missGlam.jpg";
+import gambar4 from "@/assets/images/baliho/baliho-konvermex.jpg";
+import gambar5 from "@/assets/images/baliho/baliho-oxygen.jpg";
 export const CarouselDemo = () => {
   const slideData = [
     {

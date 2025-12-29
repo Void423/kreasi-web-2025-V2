@@ -12,7 +12,7 @@ import Client11 from "@/assets/images/logo-djarum.png";
 import Client12 from "@/assets/images/kredivo-seeklogo.png";
 import Client13 from "@/assets/images/logo-class-mild.png";
 // card services
-import Billboard from "@/assets/images/baliho-missGlam.jpg";
+import Billboard from "@/assets/images/baliho/baliho-missGlam.jpg";
 import Neonbox from "@/assets/images/Our Works/neonbox-posIndonesia.jpg";
 import Banner from "@/assets/images/Our Works/im3-printing.jpg";
 // Our Works
@@ -26,9 +26,9 @@ import { StaticImageData } from "next/image";
 
 // services
 /* Billboard */
-import gambar01 from "@/assets/images/baliho-missGlam.jpg";
-import gambar02 from "@/assets/images/baliho-konvermex.jpg";
-import gambar03 from "@/assets/images/baliho-oxygen.jpg";
+import gambar01 from "@/assets/images/baliho/baliho-konvermex.jpg";
+import gambar02 from "@/assets/images/baliho/baliho-missGlam.jpg";
+import gambar03 from "@/assets/images/baliho/baliho-oxygen.jpg";
 /* neonBox */
 import gambar1 from "@/assets/images/PNT/PNT (1).jpg";
 import gambar2 from "@/assets/images/PNT/pnt-jariPerabot.jpg";
