@@ -43,31 +43,24 @@ import gambar14 from "@/assets/images/baliho/balih-polwan.jpg";
 import gambar15 from "@/assets/images/baliho/baliho-daihatsu.jpg";
 /* PNT */
 import PNT1 from "@/assets/images/PNT/PNT (1).jpg";
-import gambar1 from "@/assets/images/PNT/PNT (1).jpg";
 import PNT2 from "@/assets/images/PNT/pnt-jariPerabot.jpg";
 import PNT3 from "@/assets/images/PNT/PNT (3).jpg";
 import PNT4 from "@/assets/images/PNT/PNT 4.jpg";
 import PNT_INDOSAT from "@/assets/images/PNT/PNT Indosat.jpg";
 import PNT_SUMATERA from "@/assets/images/PNT/PNT-SUMATERA.jpg";
-import gambar3 from "@/assets/images/PNT/PNT-SUMATERA.jpg";
 import PNT_ANDROMAX from "@/assets/images/PNT/andromax-tenda.jpg";
-import SPANDUK_INDOSAT from "@/assets/images/PNT/spanduk-indosat.jpg";
+import PNT_OPPO from "@/assets/images/PNT/PNT-oppo-sasui.jpg";
 import PNT_JATI_PERABOT from "@/assets/images/PNT/PNT Jati Perabot.jpg";
 import PNT_ADIL_MART from "@/assets/images/PNT/PNT Adil Mart.jpg";
 /* NEONBOX */
 import Neonbox1 from "@/assets/images/neonbox/neonbox-pos.jpg";
-import gambar2 from "@/assets/images/neonbox/neonbox-pos.jpg";
 import NeonboxEpson from "@/assets/images/neonbox/neonbox-epson.jpg";
 import NeonboxAswata from "@/assets/images/neonbox/neonbox-aswata.jpg";
 import NeonboxGrapari from "@/assets/images/neonbox/neonbox-grapari.jpg";
 import NeonboxBukopin from "@/assets/images/neonbox/neonbox-bukopin.jpg";
 /* digital promosi */
-import MediaPromosi from "@/assets/images/pnt-warna-komunika.jpg";
-import MediaPromosi1 from "@/assets/images/spanduk-rjcell.jpg";
-import MediaPromosi2 from "@/assets/images/spanduk-indosat-ramzil.jpg";
 import MediaPromosiKopdar from "@/assets/images/media-promosi/mediaPromosi-kopdar.jpg";
 import MediaPromosiML from "@/assets/images/media-promosi/mediaPromosi-ML.jpg";
-import MediaPromosiTelkom from "@/assets/images/media-promosi/16.jpg";
 import MediaPromosiIndosat from "@/assets/images/media-promosi/spanduk-indosat.jpg";
 import MediaPromosiIndosat2 from "@/assets/images/media-promosi/spanduk-yopiCell.jpg";
 export interface ServicesItem {
@@ -234,9 +227,9 @@ export const ServicesItems: ServicesItem[] = [
       },
       {
         id: 10,
-        src: SPANDUK_INDOSAT,
+        src: PNT_OPPO,
         title: "Produksi Spanduk Indosat untuk PNT Toko",
-        desc: "Spanduk atau banner dari provider indosat menampilkan papan nama toko. ",
+        desc: "Spanduk atau banner dari provasdaider indosat menampilkan papan nama toko. ",
       },
       {
         id: 11,
