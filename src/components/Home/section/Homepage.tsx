@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import HomepageImage from "@/assets/images/Homepage/32.jpg";
+import billboard from "@/assets/images/Billboard Kreasi.jpeg";
 import { Satoshi } from "@/lib/font";
 import HireUs from "@/components/CtaButton";
 import { BsBriefcaseFill } from "react-icons/bs";
@@ -45,7 +45,7 @@ const Homepage = () => {
       >
         {/* Gambar */}
         <Image
-          src={HomepageImage}
+          src={billboard}
           priority
           alt="Andromax 4G LTE"
           className="w-full lg:w-1/2 h-[300px] sm:h-[400px] lg:h-screen object-cover rounded-xl lg:rounded-none"

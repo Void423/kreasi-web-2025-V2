@@ -2,7 +2,7 @@
 import CtaButton from "@/components/CtaButton";
 import Image from "next/image";
 import React from "react";
-import billboard from "@/assets/images/Billboard Kreasi.jpeg";
+import billboard from "@/assets/images/baliho/baliho-sinarmas-v2.jpg";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
