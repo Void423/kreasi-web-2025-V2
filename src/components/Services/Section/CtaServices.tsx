@@ -2,7 +2,7 @@
 import CtaButton from "@/components/CtaButton";
 import Image from "next/image";
 import React from "react";
-import billboard from "@/assets/images/Billboard Kreasi.jpeg";
+import billboard from "@/assets/images/baliho/baliho-sinarmas-v2.jpg";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -55,7 +55,9 @@ const CtaServices = () => {
             baliho, neon box, street sign hingga layanan cetak profesional.
           </p>
           <div className="flex justify-center lg:justify-start">
-            <CtaButton>Get In Touch</CtaButton>
+            <CtaButton link="https://linktr.ee/KreasiADV">
+              Get In Touch
+            </CtaButton>
           </div>
         </div>
       </div>
