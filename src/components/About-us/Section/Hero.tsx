@@ -2,7 +2,6 @@
 import Image from "next/image";
 import React from "react";
 import gambar from "@/assets/images/Our Works/Our-Works (3).jpg";
-import CtaButton from "@/components/CtaButton";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -50,9 +49,8 @@ const Hero = () => {
         className="absolute inset-0 flex flex-col gap-3 items-center justify-center max-w-7xl mx-auto px-4"
       >
         <h1 className="text-3xl sm:text-3xl md:text-5xl lg:text-[101px] text-white font-bold text-center">
-          Apa Sih Sebenarnya Kreasi Advertising?
+          Siapa sih Kreasi Advertising sebenarnya?
         </h1>
-        <CtaButton>See More</CtaButton>
       </div>
     </div>
   );

@@ -55,7 +55,9 @@ const CtaServices = () => {
             baliho, neon box, street sign hingga layanan cetak profesional.
           </p>
           <div className="flex justify-center lg:justify-start">
-            <CtaButton>Get In Touch</CtaButton>
+            <CtaButton link="https://linktr.ee/KreasiADV">
+              Get In Touch
+            </CtaButton>
           </div>
         </div>
       </div>
