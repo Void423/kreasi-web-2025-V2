@@ -97,123 +97,72 @@ export default function MoreServices({
         </div>
 
         {/* === Dialog Content === */}
-        <DialogContent className="p-0 overflow-hidden border-none bg-[#0B0C10]/95 backdrop-blur-xl text-white max-w-[98vw] sm:max-w-[95vw] md:max-w-[85vw] lg:max-w-[75vw] max-h-[95vh] overflow-y-auto">
+        <DialogContent className="p-0 overflow-hidden border-none bg-[#0B0C10]/95 backdrop-blur-xl text-white max-w-[98vw] sm:max-w-[95vw] md:max-w-[90vw] lg:max-w-[90vw] max-h-[95vh] overflow-y-auto">
           <DialogHeader className="p-4 sm:p-6 border-b border-white/10">
             <DialogTitle className="text-xl sm:text-2xl font-semibold tracking-tight">
               {title}
             </DialogTitle>
           </DialogHeader>
 
-          <div className="flex flex-col md:flex-row gap-4 sm:gap-6 md:gap-8 p-4 sm:p-6 md:p-8">
-            {/* Main Content Section (Combined Image and Text) */}
-            <div className="w-full md:w-2/3 flex flex-col gap-4 sm:gap-6">
+          <div className="flex flex-col md:flex-row h-full max-h-[85vh] overflow-hidden">
+            {/* Left Section (Fixed/Sticky) - Main Preview & Text */}
+            <div className="hidden w-full md:w-2/3 md:flex flex-col p-4 sm:p-6 md:p-8 overflow-y-auto">
               <div className="flex flex-col gap-4 sm:gap-6">
-                {/* Image Section */}
-                <div className="w-full rounded-xl overflow-hidden h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px]">
-                  <Image
-                    src={activeItem.src}
-                    alt={activeItem.title}
-                    // width={800}
-                    // height={400}
-                    className="w-full h-full object-cover rounded-xl transition-transform duration-500 hover:scale-105"
-                    priority
-                  />
+                {/* Active Image Section */}
+                <div className="w-full rounded-2xl overflow-hidden shadow-2xl bg-black/20">
+                  <div className="relative w-full aspect-video">
+                    <Image
+                      src={activeItem.src}
+                      alt={activeItem.title}
+                      fill
+                      className="object-cover transition-transform duration-700 hover:scale-105"
+                      priority
+                    />
+                  </div>
                 </div>
 
                 {/* Text Section */}
-                <div className="w-full space-y-2 sm:space-y-4">
-                  <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold">
+                <div className="w-full space-y-3 sm:space-y-4">
+                  <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60">
                     {activeItem.title}
                   </h1>
-                  <p className="text-sm sm:text-base text-[#B0B0B0] leading-relaxed">
+                  <p className="text-base sm:text-lg text-[#B0B0B0] leading-relaxed font-light">
                     {activeItem.desc}
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Pinterest-like Photo Gallery Section */}
-            <div className="w-full md:w-1/3 rounded-2xl overflow-hidden mt-4 md:mt-0">
-              <div className="grid grid-cols-2 gap-2 sm:gap-3 h-full max-h-[400px] md:max-h-[500px]">
-                {/* Gambar utama tinggi (dominant) */}
-                {serviceData.data[0] && (
-                  <div
-                    className="col-span-2 rounded-2xl overflow-hidden h-[150px] sm:h-[200px] md:h-[250px] cursor-pointer relative group"
-                    onClick={() => setActiveItemIndex(0)}
-                  >
-                    <Image
-                      src={serviceData.data[0].src}
-                      alt={serviceData.data[0].title}
-                      // width={500}
-                      // height={250}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
+            {/* Right Section (Scrollable) - Masonry Grid Gallery */}
+            <div className="w-full md:w-1/3 border-t md:border-t-0 md:border-l border-white/10 bg-black/20 overflow-y-auto p-4 custom-scrollbar">
+              <div className="grid grid-cols-2 gap-3">
+                {serviceData.data.map((item, index) => {
+                  return (
                     <div
-                      className={`absolute inset-0 bg-black/50 flex items-center justify-center transition-opacity duration-300 ${
-                        activeItemIndex === 0
-                          ? "opacity-50"
-                          : "opacity-0 group-hover:opacity-30"
-                      }`}
+                      key={item.id}
+                      className="rounded-xl overflow-hidden cursor-pointer relative group aspect-[4/3]"
+                      onClick={() => setActiveItemIndex(index)}
                     >
-                      {activeItemIndex === 0 && (
-                        <div className="w-4 h-4 sm:w-6 sm:h-6 rounded-full bg-primary border-2 border-white"></div>
-                      )}
+                      <Image
+                        src={item.src}
+                        alt={item.title}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                      <div
+                        className={`absolute inset-0 bg-black/50 flex items-center justify-center transition-all duration-300 ${
+                          activeItemIndex === index
+                            ? "opacity-100 ring-2 ring-primary ring-inset"
+                            : "opacity-0 group-hover:opacity-40"
+                        }`}
+                      >
+                        {activeItemIndex === index && (
+                          <div className="w-3 h-3 rounded-full bg-primary shadow-[0_0_10px_rgba(255,255,255,0.8)]"></div>
+                        )}
+                      </div>
                     </div>
-                  </div>
-                )}
-
-                {/* Dua gambar kecil di bawah */}
-                {serviceData.data[1] && (
-                  <div
-                    className="rounded-2xl overflow-hidden h-[80px] sm:h-[100px] md:h-[120px] cursor-pointer relative group"
-                    onClick={() => setActiveItemIndex(1)}
-                  >
-                    <Image
-                      src={serviceData.data[1].src}
-                      alt={serviceData.data[1].title}
-                      // width={250}
-                      // height={120}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                    <div
-                      className={`absolute inset-0 bg-black/50 flex items-center justify-center transition-opacity duration-300 ${
-                        activeItemIndex === 1
-                          ? "opacity-50"
-                          : "opacity-0 group-hover:opacity-30"
-                      }`}
-                    >
-                      {activeItemIndex === 1 && (
-                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-primary border-2 border-white"></div>
-                      )}
-                    </div>
-                  </div>
-                )}
-
-                {serviceData.data[2] && (
-                  <div
-                    className="rounded-2xl overflow-hidden h-[80px] sm:h-[100px] md:h-[120px] cursor-pointer relative group"
-                    onClick={() => setActiveItemIndex(2)}
-                  >
-                    <Image
-                      src={serviceData.data[2].src}
-                      alt={serviceData.data[2].title}
-                      // width={250}
-                      // height={120}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                    <div
-                      className={`absolute inset-0 bg-black/50 flex items-center justify-center transition-opacity duration-300 ${
-                        activeItemIndex === 2
-                          ? "opacity-50"
-                          : "opacity-0 group-hover:opacity-30"
-                      }`}
-                    >
-                      {activeItemIndex === 2 && (
-                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-primary border-2 border-white"></div>
-                      )}
-                    </div>
-                  </div>
-                )}
+                  );
+                })}
               </div>
             </div>
           </div>

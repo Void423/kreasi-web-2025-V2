@@ -12,7 +12,7 @@ import Client11 from "@/assets/images/logo-djarum.png";
 import Client12 from "@/assets/images/kredivo-seeklogo.png";
 import Client13 from "@/assets/images/logo-class-mild.png";
 // card services
-import Billboard from "@/assets/images/baliho-missGlam.jpg";
+import Billboard from "@/assets/images/baliho/baliho-missGlam.jpg";
 import Neonbox from "@/assets/images/Our Works/neonbox-posIndonesia.jpg";
 import Banner from "@/assets/images/Our Works/im3-printing.jpg";
 // Our Works
@@ -26,17 +26,50 @@ import { StaticImageData } from "next/image";
 
 // services
 /* Billboard */
-import gambar01 from "@/assets/images/baliho-missGlam.jpg";
-import gambar02 from "@/assets/images/baliho-konvermex.jpg";
-import gambar03 from "@/assets/images/baliho-oxygen.jpg";
-/* neonBox */
+import gambar01 from "@/assets/images/baliho/baliho-konvermex.jpg";
+import gambar02 from "@/assets/images/baliho/baliho-missGlam.jpg";
+import gambar03 from "@/assets/images/baliho/baliho-oxygen.jpg";
+import gambar04 from "@/assets/images/bca-billboard.jpg";
+import gambar05 from "@/assets/images/baliho/baliho-epson.jpg";
+import gambar06 from "@/assets/images/baliho/baliho-indofood.jpg";
+import gambar07 from "@/assets/images/oppo-spanduk.jpg";
+import gambar08 from "@/assets/images/baliho/baliho-pengadaian.jpg";
+import gambar09 from "@/assets/images/baliho/baliho-sinarmas.jpg";
+import gambar10 from "@/assets/images/baliho/baliho-rommy.jpg";
+import gambar11 from "@/assets/images/baliho/baliho-sekolah.jpg";
+import gambar12 from "@/assets/images/baliho/baliho-hendra.jpg";
+import gambar13 from "@/assets/images/baliho/balih-smansa.jpg";
+import gambar14 from "@/assets/images/baliho/balih-polwan.jpg";
+import gambar15 from "@/assets/images/baliho/baliho-daihatsu.jpg";
+/* PNT */
+import PNT1 from "@/assets/images/PNT/PNT (1).jpg";
 import gambar1 from "@/assets/images/PNT/PNT (1).jpg";
-import gambar2 from "@/assets/images/PNT/pnt-jariPerabot.jpg";
-import gambar3 from "@/assets/images/PNT/PNT (3).jpg";
+import PNT2 from "@/assets/images/PNT/pnt-jariPerabot.jpg";
+import PNT3 from "@/assets/images/PNT/PNT (3).jpg";
+import PNT4 from "@/assets/images/PNT/PNT 4.jpg";
+import PNT_INDOSAT from "@/assets/images/PNT/PNT Indosat.jpg";
+import PNT_SUMATERA from "@/assets/images/PNT/PNT-SUMATERA.jpg";
+import gambar3 from "@/assets/images/PNT/PNT-SUMATERA.jpg";
+import PNT_ANDROMAX from "@/assets/images/PNT/andromax-tenda.jpg";
+import SPANDUK_INDOSAT from "@/assets/images/PNT/spanduk-indosat.jpg";
+import PNT_JATI_PERABOT from "@/assets/images/PNT/PNT Jati Perabot.jpg";
+import PNT_ADIL_MART from "@/assets/images/PNT/PNT Adil Mart.jpg";
+/* NEONBOX */
+import Neonbox1 from "@/assets/images/neonbox/neonbox-pos.jpg";
+import gambar2 from "@/assets/images/neonbox/neonbox-pos.jpg";
+import NeonboxEpson from "@/assets/images/neonbox/neonbox-epson.jpg";
+import NeonboxAswata from "@/assets/images/neonbox/neonbox-aswata.jpg";
+import NeonboxGrapari from "@/assets/images/neonbox/neonbox-grapari.jpg";
+import NeonboxBukopin from "@/assets/images/neonbox/neonbox-bukopin.jpg";
 /* digital promosi */
-import MediaPromosi from "@/assets/images/38.jpg";
-import MediaPromosi1 from "@/assets/images/36a.jpg";
-import MediaPromosi2 from "@/assets/images/67.jpg";
+import MediaPromosi from "@/assets/images/pnt-warna-komunika.jpg";
+import MediaPromosi1 from "@/assets/images/spanduk-rjcell.jpg";
+import MediaPromosi2 from "@/assets/images/spanduk-indosat-ramzil.jpg";
+import MediaPromosiKopdar from "@/assets/images/media-promosi/mediaPromosi-kopdar.jpg";
+import MediaPromosiML from "@/assets/images/media-promosi/mediaPromosi-ML.jpg";
+import MediaPromosiTelkom from "@/assets/images/media-promosi/16.jpg";
+import MediaPromosiIndosat from "@/assets/images/media-promosi/spanduk-indosat.jpg";
+import MediaPromosiIndosat2 from "@/assets/images/media-promosi/spanduk-yopiCell.jpg";
 export interface ServicesItem {
   id: number;
   data: {
@@ -52,21 +85,93 @@ export const ServicesItems: ServicesItem[] = [
     data: [
       {
         id: 1,
-        src: gambar01,
+        src: gambar02,
         title: "Billboard Miss Glam",
-        desc: "Jl. Raya Padang Panjang - Bukittinggi, Ladang Laweh, Kec. Banuhampu, Kabupaten Agam, Sumatera Barat 26181",
+        desc: "Jl. Raya Padang Panjang - Bukittinggi, Ladang Laweh, Kec. Banuhampu, Kabupaten Agam",
       },
       {
         id: 2,
-        src: gambar02,
+        src: gambar01,
         title: "Billboard Konvermex",
-        desc: "Jl. Raya Padang Panjang - Bukittinggi, Ladang Laweh, Kec. Banuhampu, Kabupaten Agam, Sumatera Barat 26181",
+        desc: "Jl. Raya Padang Panjang - Bukittinggi, Ladang Laweh, Kec. Banuhampu, Kabupaten Agam",
       },
       {
         id: 3,
         src: gambar03,
         title: "Billboard Oxygen",
-        desc: "Jl. Raya Padang Panjang - Bukittinggi 90-92, Ladang Laweh, Kec. Banuhampu, Kabupaten Agam, Sumatera Barat 26181",
+        desc: "Jl. Raya Padang Panjang - Bukittinggi 90-92, Ladang Laweh, Kec. Banuhampu, Kabupaten Agam",
+      },
+      {
+        id: 4,
+        src: gambar04,
+        title: "Baliho BCA",
+        desc: "Jl. Sutan Syahrir 9, Tarok Dipo, Kec. Guguk Panjang, Kota Bukittinggi",
+      },
+      {
+        id: 5,
+        src: gambar05,
+        title: "Billboard Epson frontlight.",
+        desc: "Jl. Raya Padang Panjang - Bukittinggi 57-62, Bukit Cangang Kayu Ramang, Kec. Guguk Panjang, Kota Bukittinggi",
+      },
+      {
+        id: 6,
+        src: gambar06,
+        title: "Billboard Indofood.",
+        desc: "Jl. Sumbar-Riau No.Km. 19, Air Putih Lubuk Bangku, Kec. Harau, Kabupaten Lima Puluh Kota",
+      },
+      {
+        id: 7,
+        src: gambar07,
+        title: "Billboard OPPO",
+        desc: "Jl. Ahmad Yani No.1, Benteng Ps. Atas, Kec. Guguk Panjang, Kota Bukittinggi",
+      },
+      {
+        id: 8,
+        src: gambar08,
+        title: "Billboard Pengadaian",
+        desc: "Jl. Raya Padang Panjang - Bukittinggi, Bukit Cangang Kayu Ramang, Kec. Guguk Panjang, Kota Bukittinggi",
+      },
+      {
+        id: 9,
+        src: gambar09,
+        title: "Billboard Asuransi Sinarmas.",
+        desc: "Jl. Raya Padang Panjang - Bukittinggi 92, Taluak Ampek Suku, Kec. Banuhampu, Kabupaten Agam",
+      },
+      {
+        id: 10,
+        src: gambar10,
+        title: "Billboard Rommy Adams",
+        desc: "Billboard Ucapan Sambutan Idul Fitri horizontal ukuran 5×10 meter dengan pencahayaan frontlight.",
+      },
+      {
+        id: 11,
+        src: gambar11,
+        title: "Baliho Sekolah",
+        desc: "Baliho penerimaan siswa sekolah ukuran 4×6 meter dengan pencahayaan frontlight.",
+      },
+      {
+        id: 12,
+        src: gambar12,
+        title: "Billboard Sambutan Idul Fitri",
+        desc: "Billboard Ucapan Sambutan Idul Fitri horizontal ukuran 5×10 meter dengan pencahayaan frontlight.",
+      },
+      {
+        id: 13,
+        src: gambar13,
+        title: "Baliho Event Sekolah",
+        desc: "Baliho event reunian sekolah SMAN 1 Bukittinggi dengan ukuran 4x6 meter.",
+      },
+      {
+        id: 14,
+        src: gambar14,
+        title: "Billboard Perayaan Hari Jadi Polwan",
+        desc: "Billboard HUT Polwan dengan ukuran 5x10 meter.",
+      },
+      {
+        id: 15,
+        src: gambar15,
+        title: "Billboard Daihatsu",
+        desc: "Billboard Daihatsu dengan ukuran 5x10 meter dengan pencahayan frontlight.",
       },
     ],
   },
@@ -75,21 +180,93 @@ export const ServicesItems: ServicesItem[] = [
     data: [
       {
         id: 1,
-        src: gambar1,
+        src: PNT1,
         title: "Papan Nama Toko Telkomsel",
         desc: "Papan nama toko dengan posisi horizontal dan tipis",
       },
       {
         id: 2,
-        src: gambar2,
+        src: PNT2,
         title: "Papan Nama Toko Jati Perabot",
         desc: "Papan nama toko Jati Perabotan.",
       },
       {
         id: 3,
-        src: gambar3,
+        src: PNT3,
         title: "Etalase Toko",
         desc: "Etalase toko dilengkapi dengan kaca etalase. Pada bagian depan etalase juga ditambahkan branding OPPO.",
+      },
+      {
+        id: 4,
+        src: Neonbox1,
+        title: "Neonbox Kantor Pos ",
+        desc: "Neonbox kantor pos dengan posisi horizontal dan memiliki penerangan Backlight",
+      },
+      {
+        id: 5,
+        src: PNT4,
+        title: "PNT Kantor Pos",
+        desc: "Papan nama toko dengan posisi horizontal dan tipis",
+      },
+      {
+        id: 6,
+        src: NeonboxEpson,
+        title: "Neonbox Epson Toko ",
+        desc: "Neonbox GeA Computer House dengan posisi horizontal ",
+      },
+      {
+        id: 7,
+        src: PNT_SUMATERA,
+        title: "PNT PT Sumatera Inti Seluler",
+        desc: "Papan Nama dengan posisi horizontal dan memiliki bingkai pada keempat sisi",
+      },
+      {
+        id: 8,
+        src: PNT_ANDROMAX,
+        title: "Produksi Tenda Stand Andromax",
+        desc: "Stand tenda lipat Andromax dengan bahan dasar kain",
+      },
+      {
+        id: 9,
+        src: PNT_INDOSAT,
+        title: "Produksi Spanduk Indosat untuk PNT Toko",
+        desc: "Spanduk atau banner dari provider indosat menampilkan papan nama toko. ",
+      },
+      {
+        id: 10,
+        src: SPANDUK_INDOSAT,
+        title: "Produksi Spanduk Indosat untuk PNT Toko",
+        desc: "Spanduk atau banner dari provider indosat menampilkan papan nama toko. ",
+      },
+      {
+        id: 11,
+        src: PNT_JATI_PERABOT,
+        title: "Papan Nama Toko Jati Perabot",
+        desc: "Papan nama toko Jati Perabotan.",
+      },
+      {
+        id: 12,
+        src: PNT_ADIL_MART,
+        title: "Papan Nama Toko Adil Mart",
+        desc: "Papan nama toko Adil Mart.",
+      },
+      {
+        id: 13,
+        src: NeonboxAswata,
+        title: "Neonbox Asuransi Aswata",
+        desc: "Neonbox horizontal dengan frame alumunium dilengkapi dengan tiang. Penulisan nama asuransi terlihat besar dan jelas serta mudah dibaca",
+      },
+      {
+        id: 14,
+        src: NeonboxGrapari,
+        title: "Neonbox Grapari",
+        desc: "Neonbox  grapari telkomsel tertempel didinding dengan posisi horizontal",
+      },
+      {
+        id: 15,
+        src: NeonboxBukopin,
+        title: "Neon Box Bank Syariah Bukopin",
+        desc: "Jl. Perintis Kemerdekaan 30-8, Aur Tajungkang Tengah Sawah, Kec. Guguk Panjang, Kota Bukittinggi",
       },
     ],
   },
@@ -98,21 +275,27 @@ export const ServicesItems: ServicesItem[] = [
     data: [
       {
         id: 1,
-        src: MediaPromosi,
-        title: "Ramzi Cell",
-        desc: "Produksi Spanduk Indosat untuk PNT Toko",
+        src: MediaPromosiKopdar,
+        title: "Produksi Spanduk",
+        desc: "Produksi Spanduk Kopdar",
       },
       {
         id: 2,
-        src: MediaPromosi1,
-        title: "R&J CELL",
-        desc: "Produksi Spanduk Indosat ",
+        src: MediaPromosiML,
+        title: "Produksi Spanduk ",
+        desc: "Produksi Spanduk Tournament mobile legend",
       },
       {
         id: 3,
-        src: MediaPromosi2,
-        title: "Warna Komunika ",
-        desc: "Produksi Spanduk Indosat untuk PNT Toko",
+        src: MediaPromosiIndosat,
+        title: "Produksi Spanduk Indosat untuk PNT Toko",
+        desc: "Spanduk atau banner dari provider Indosat menampilkan papan nama toko. Spanduk/banner cetak ini memiliki bahan yang tipis.",
+      },
+      {
+        id: 4,
+        src: MediaPromosiIndosat2,
+        title: "Produksi Spanduk Indosat untuk PNT Toko",
+        desc: "Spanduk atau banner dari provider indosat menampilkan papan nama toko. ",
       },
     ],
   },
