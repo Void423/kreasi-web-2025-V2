@@ -36,7 +36,7 @@ import gambar07 from "@/assets/images/oppo-spanduk.jpg";
 import gambar08 from "@/assets/images/baliho/baliho-pengadaian.jpg";
 import gambar09 from "@/assets/images/baliho/baliho-sinarmas.jpg";
 import gambar10 from "@/assets/images/baliho/baliho-rommy.jpg";
-import gambar11 from "@/assets/images/baliho/baliho-sekolah.jpg";
+import gambar11 from "@/assets/images/street-sign/street-sign-IM3.jpg";
 import gambar12 from "@/assets/images/baliho/baliho-hendra.jpg";
 import gambar13 from "@/assets/images/baliho/balih-smansa.jpg";
 import gambar14 from "@/assets/images/baliho/balih-polwan.jpg";
@@ -139,8 +139,8 @@ export const ServicesItems: ServicesItem[] = [
       {
         id: 11,
         src: gambar11,
-        title: "Baliho Sekolah",
-        desc: "Baliho penerimaan siswa sekolah ukuran 4×6 meter dengan pencahayaan frontlight.",
+        title: "Street Sign provider Indosat.",
+        desc: "Jl. Raya Padang Panjang - Bukittinggi, Belakang Balok, Kec. Aur Birugo Tigo Baleh, Kota Bukittinggi, Sumatera Barat 26181",
       },
       {
         id: 12,
